@@ -74,7 +74,7 @@ while True:
     print("Epoch: ", count, "Score: ", snake.score)
     if snake.score > highscore:
         highscore = snake.score
-        f = open("highscore", "w")
+        f = open("highscore.txt", "w")
         f.write(str(highscore))
         f.close()
         bot.save("snake_bot.pt")
